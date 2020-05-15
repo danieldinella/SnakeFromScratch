@@ -15,6 +15,9 @@ public class SnakeFromScratch{
 		}
 	
 	}
+	
+	private static boolean utenteVuoleGiocareAncora()
+	{ return true;}
 		
 	public static void main(String[] args) {
 		javax.swing.SwingUtilities.invokeLater(new Runnable(){
@@ -26,8 +29,12 @@ public class SnakeFromScratch{
 		do
 		{	//gioca una partita
 		
+			Partita partita = new Partita();
+			partita.gioca();
+		
 		}
-		while(true);	//vuoi giocare ancora
+		while	//vuoi giocare ancora
+			(utenteVuoleGiocareAncora());
 		}
 }
 
